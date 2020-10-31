@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name SuperSpeakerSwitcher)(type KiCad)(uri "$(KIPRJMOD)/SuperSpeakerSwitcher.pretty")(options "")(descr ""))
+)
