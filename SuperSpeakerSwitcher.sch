@@ -32,6 +32,7 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:relay
+LIBS:SuperSpeakerSwitcher-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -78,17 +79,6 @@ F 2 "Connectors:BARREL_JACK" H 7450 6010 50  0001 C CNN
 F 3 "" H 7450 6010 50  0001 C CNN
 	1    7400 6050
 	1    0    0    -1  
-$EndComp
-$Comp
-L Conn_01x02 J1
-U 1 1 5F9D9A5B
-P 7200 5000
-F 0 "J1" H 7200 5100 50  0000 C CNN
-F 1 "Conn_01x02" H 7200 4800 50  0000 C CNN
-F 2 "Connectors_Terminal_Blocks:TerminalBlock_bornier-2_P5.08mm" H 7200 5000 50  0001 C CNN
-F 3 "" H 7200 5000 50  0001 C CNN
-	1    7200 5000
-	-1   0    0    1   
 $EndComp
 $Comp
 L GND #PWR01
@@ -908,7 +898,7 @@ Wire Wire Line
 Wire Wire Line
 	7700 6150 8500 6150
 Wire Wire Line
-	7400 4900 7400 4900
+	7250 4900 7400 4900
 Wire Wire Line
 	7750 4900 7700 4900
 Wire Wire Line
@@ -1094,7 +1084,7 @@ Wire Wire Line
 Wire Wire Line
 	5700 2900 5550 2900
 Wire Wire Line
-	7400 5000 7400 5000
+	7250 5000 7400 5000
 Wire Wire Line
 	1600 4700 1550 4700
 Wire Wire Line
@@ -1407,4 +1397,30 @@ Wire Wire Line
 	8500 5850 8500 5900
 Text Notes 7300 7000 0    60   ~ 0
 SUPER HEAVY DUTY SPEAKER SWITCHER\nBY DANIEL MARKS\nCREATIVE COMMONS CC-BY-SA 4.0
+$Comp
+L Conn_01x03 J1
+U 1 1 5F9E1798
+P 7050 5000
+F 0 "J1" H 7050 5200 50  0000 C CNN
+F 1 "Conn_01x03" H 7050 4800 50  0000 C CNN
+F 2 "Connectors_Terminal_Blocks:TerminalBlock_bornier-3_P5.08mm" H 7050 5000 50  0001 C CNN
+F 3 "" H 7050 5000 50  0001 C CNN
+	1    7050 5000
+	-1   0    0    1   
+$EndComp
+$Comp
+L +12V #PWR?
+U 1 1 5F9E1D06
+P 7300 4800
+F 0 "#PWR?" H 7300 4650 50  0001 C CNN
+F 1 "+12V" H 7300 4940 50  0000 C CNN
+F 2 "" H 7300 4800 50  0001 C CNN
+F 3 "" H 7300 4800 50  0001 C CNN
+	1    7300 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7300 4800 7300 5100
+Wire Wire Line
+	7300 5100 7250 5100
 $EndSCHEMATC
